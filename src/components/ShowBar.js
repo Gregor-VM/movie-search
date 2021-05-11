@@ -36,7 +36,7 @@ function ShowBar() {
     async (id) => {
       if (selectedMovie) {
         const res = await axios.get(
-          `http://www.omdbapi.com/?apikey=66ce2ccf&i=${id}`
+          `https://www.omdbapi.com/?apikey=66ce2ccf&i=${id}`
         );
         setMovie(res.data);
         setIsLoading(false);
@@ -56,7 +56,7 @@ function ShowBar() {
     if (movie?.Title !== undefined) {
       return (
         <div className="col-lg-8 center-class" ref={messageRef}>
-          <div className="card shadow">
+          <div className="card shadow mt-5 mt-md-0">
             <div className="card-body d-flex p-0">
               <img
                 src={movie.Poster}
@@ -67,6 +67,13 @@ function ShowBar() {
                 <h4 className="border-bottom pb-2 border-info text-center">
                   {movie.Title}
                 </h4>
+                <img
+                  className="d-block d-lg-none mx-auto my-1"
+                  src={movie.Poster}
+                  alt={movie.Title}
+                  width={200}
+                  height={200}
+                ></img>
                 <p>{movie.Plot}</p>
                 <small className="d-flex flex-column">
                   <p>

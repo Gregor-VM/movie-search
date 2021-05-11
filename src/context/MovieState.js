@@ -10,7 +10,7 @@ function MovieState({ children }) {
 
   const getMovies = async (query) => {
     const res = await axios.get(
-      `http://www.omdbapi.com/?apikey=66ce2ccf&s=${query}`
+      `https://www.omdbapi.com/?apikey=66ce2ccf&s=${query}`
     );
     dispatch({ type: "GET_MOVIES", payload: res.data.Search });
     return res.data.Search;

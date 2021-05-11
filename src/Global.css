@@ -1,27 +1,31 @@
-body{
-    background: rgb(24,36,244) !important;
-    background: linear-gradient(90deg, rgba(24,36,244,0.196516106442577) 10%, rgba(64,4,4,0) 100%) !important;
+body {
+  background: rgb(24, 36, 244) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 36, 244, 0.196516106442577) 10%,
+    rgba(64, 4, 4, 0) 100%
+  ) !important;
 }
 
-.scroll{
-    height: 91vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+.scroll {
+  height: 91vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.scroll::-webkit-scrollbar{
-    display: none;
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
-.card-img-top{
-    height: 300px;
-    object-fit: cover;
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
 }
 
-.center-class{
-    height: 91vh;
-    display: flex;
-    align-items: center;
+.center-class {
+  height: 91vh;
+  display: flex;
+  align-items: center;
 }
