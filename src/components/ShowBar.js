@@ -26,8 +26,6 @@ function ShowBar() {
     }
   }, [selectedMovie]);
 
-  //const rate = Math.round((movie.imdbRating/10)*100);
-
   useEffect(() => {
     setTimeout(() => setRate(Math.round((movie.imdbRating / 10) * 100), 100));
   }, [movie]);
